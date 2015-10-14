@@ -1,0 +1,6 @@
+NO_START=0 # Start on boot
+JAVA_OPTIONS="-Dsolr.solr.home={{ pillar['solr']['installation_location'] }}solr/solr -Djetty.port={{ pillar['solr']['port'] }} $JAVA_OPTIONS"
+JAVA_HOME=/usr/java/default
+JETTY_HOME={{ pillar['solr']['installation_location'] }}solr
+JETTY_USER=solr
+JETTY_LOGS=/var/log/solr/
