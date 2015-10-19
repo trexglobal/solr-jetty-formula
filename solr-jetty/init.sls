@@ -19,7 +19,7 @@ solr_user:
     - fullname: Solr User
     - shell: /sbin/false
     - home: /opt/solr
-    - groups: solr
+    - group: solr
     - gid_from_name: True
     - require:
       - archive: solr-jetty-tar
