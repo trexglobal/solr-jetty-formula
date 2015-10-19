@@ -73,6 +73,6 @@ jetty:
     - enable: True
     - restart: True
     - watch:
-      - file: /opt/solr/solr
+      - file: /opt/solr/solr/*
     - require:
       - file: /etc/init.d/jetty
