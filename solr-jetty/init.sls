@@ -9,8 +9,13 @@ solr-jetty-tar:
     - archive_format: tar
     - if_missing: /opt/solr/
 
+solr_user_group:
+  group.present:
+    - name: solr
+
 solr_user:
   user.present:
+    - name: solr
     - fullname: Solr User
     - shell: /sbin/false
     - home: /opt/solr
