@@ -1,5 +1,5 @@
 include:
-  - sfym.java
+  - php-apps.java
 
 solr-jetty-tar:
   archive.extracted:
@@ -29,6 +29,7 @@ solr_user:
     - user: solr
     - group: solr
     - mode: 755
+    - makedirs: True
     - recurse:
       - user
       - group
@@ -40,6 +41,7 @@ solr_user:
     - user: solr
     - group: solr
     - mode: 755
+    - makedirs: True
     - recurse:
       - user
       - group
