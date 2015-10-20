@@ -41,10 +41,7 @@ solr_user:
     - user: solr
     - group: solr
     - mode: 755
-    - makedirs: True
-    - recurse:
-      - user
-      - group
+    - makedirs: True    
     - require:
       - archive: solr-jetty-tar
 
