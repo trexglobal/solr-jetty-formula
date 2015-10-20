@@ -35,6 +35,17 @@ solr_user:
     - require:
       - archive: solr-jetty-tar
 
+{{ pillar['solr']['data_dir'] }}:
+  file.directory:
+    - user: solr
+    - group: solr
+    - mode: 755
+    - recurse:
+      - user
+      - group
+    - require:
+      - archive: solr-jetty-tar
+
 /etc/default/jetty:
   file:
     - managed
