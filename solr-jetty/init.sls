@@ -83,7 +83,7 @@ jetty:
     - running
     - enable: True
     - restart: True
-    - init_delay: 30
+    - init_delay: 60
     - watch:
       - file: /opt/solr/solr/*
     - require:
