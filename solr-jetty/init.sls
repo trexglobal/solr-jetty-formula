@@ -21,7 +21,6 @@ solr_user:
     - home: /opt/solr
     - groups:
       - solr
-    - gid_from_name: True
     - require:
       - archive: solr-jetty-tar
 
